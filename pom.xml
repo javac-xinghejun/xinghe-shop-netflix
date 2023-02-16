@@ -10,6 +10,7 @@
     <modules>
         <module>eureka-server</module>
         <module>user</module>
+        <module>product</module>
     </modules>
     <version>1.0-SNAPSHOT</version>
 

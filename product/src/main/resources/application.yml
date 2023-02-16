@@ -1,14 +1,17 @@
+spring:
+  application:
+    name: product
 server:
-  port: 8001
+  port: 8100
 eureka:
   instance:
-    hostname: user-1
+    hostname: product
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 90
   client:
     register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://eureka-1:8761/eureka/,http://eureka-2:8762/eureka/, http://eureka-3:8763/eureka/
+    fetch-registry: false
 
+logging:
+  config: classpath:logback.xml

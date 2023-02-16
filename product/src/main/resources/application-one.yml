@@ -1,8 +1,8 @@
 server:
-  port: 8001
+  port: 8101
 eureka:
   instance:
-    hostname: user-1
+    hostname: product-1
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 90
