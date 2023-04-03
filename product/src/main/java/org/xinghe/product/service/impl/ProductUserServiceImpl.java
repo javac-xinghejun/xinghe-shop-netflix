@@ -23,6 +23,7 @@ public class ProductUserServiceImpl implements ProductUserService {
     private LoadBalancerClient loadBalancerClient;
     @Resource
     private RestTemplate restTemplate;
+
     @Override
     public String getUserId(Long userId) {
         ServiceInstance serviceInstance = loadBalancerClient.choose("user");
